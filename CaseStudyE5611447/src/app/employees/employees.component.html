@@ -1,0 +1,33 @@
+<div class="container mt-5">
+
+  <h2>Employee data</h2>
+
+  <table class="table table-striped">
+    <thead>
+        <tr>
+          <th>User Id</th>
+          <th>Job Title</th>
+          <th>FirstName</th>
+          <th>:astName</th>
+          <th>FullName</th>
+          <th>EmployeeCode</th>
+          <th>Region</th>
+          <th>Phone</th>
+          <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of employees">
+        <td>{{ user.userId }}</td>
+        <td>{{ user.jobTitleName }}</td>
+        <td>{{ user.firstName }}</td>
+        <td>{{ user.lastName }}</td>
+        <td>{{ user.preferredFullName }}</td>
+        <td>{{ user.employeeCode }}</td>
+        <td>{{ user.region }}</td>
+        <td>{{ user.phoneNumber }}</td>
+        <td>{{ user.emailAddress }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
